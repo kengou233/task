@@ -12,7 +12,7 @@ public class AmicablePair {
 		// 对了 先求因数 嘿嘿
 		for (int i = 1; i < 9999; i++) {
 			int n = factor(i);
-			if (factor(n) == i)//如果该数字
+			if (i > n && factor(n) == i)//如果前一个数大于它的因子和 并且 它的因子和的因子和等于它本身
 				System.out.println(i + "\t" + n);
 		}
 	}

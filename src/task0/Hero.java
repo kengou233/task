@@ -5,6 +5,7 @@ public abstract class Hero implements Assailable {
 	private int level;
 	private int maxLife;
 	private int currLife;
+
 	public Hero(String nickname, int level, int maxLife, int currLife) {
 		super();
 		this.nickname = nickname;

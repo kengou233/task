@@ -1,4 +1,4 @@
-package task5;
+package projectDemo;
 
 public class Dancer extends Actor {
 

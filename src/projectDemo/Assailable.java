@@ -1,4 +1,4 @@
-package task0;
+package projectDemo;
 /**
  * 只要满足本接口 即可攻击任何目标
  * @author	 创建人：灰凉

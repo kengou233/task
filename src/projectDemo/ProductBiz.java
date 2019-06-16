@@ -1,4 +1,4 @@
-package task2;
+package projectDemo;
 import javax.swing.JOptionPane;
 /**
  * @author kengou

@@ -1,4 +1,4 @@
-package task4;
+package projectDemo;
 
 public class Warrior extends Hero {
 	//战士的特有属性：物理攻击

@@ -1,4 +1,4 @@
-package task1;
+package projectDemo;
 /**
  * @author kengou
  *	使用封装 简单卖书

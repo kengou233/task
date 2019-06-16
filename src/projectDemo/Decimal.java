@@ -1,4 +1,4 @@
-package task;
+package projectDemo;
 import java.util.Scanner;
 
 public class Decimal {

@@ -1,4 +1,4 @@
-package task5;
+package projectDemo;
 
 public class Chunwantest {
 	public static void main(String[] args) {

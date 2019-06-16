@@ -1,4 +1,4 @@
-package task3;
+package projectDemo;
 /**
  * @author kengou
  *	简单的密码验证

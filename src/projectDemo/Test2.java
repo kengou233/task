@@ -1,4 +1,4 @@
-package task0;
+package projectDemo;
 
 class Test {
 	public void F(string s) {

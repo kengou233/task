@@ -25,4 +25,5 @@ public class printer {
 	public void setPaper(Paper paper) {
 		this.paper = paper;
 	}
+	
 }

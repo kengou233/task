@@ -38,12 +38,12 @@ public class RepeatStr {
 		printStr(Spstr2);// 分割字符串 指定次数
 
 		StringBuffer bf = new StringBuffer("卧槽这么屌");// 创建字符串生成器
-		bf.append("？");
-		System.out.println(bf);// 无限制添加内容
-		bf.insert(2, " ");
-		System.out.println(bf);// 指定行插入内容
-		bf.delete(bf.length() - 1, bf.length());
-		System.out.println(bf);// 删除指定行之间的内容
+		bf.append("？");// 无限制添加内容
+		System.out.println(bf);
+		bf.insert(2, " ");// 指定行插入内容
+		System.out.println(bf);
+		bf.delete(bf.length() - 1, bf.length());// 删除指定行之间的内容
+		System.out.println(bf);
 //		System.out.println(str);
 //		System.out.println(str2);
 //		System.out.println(str3 + " " + str4);

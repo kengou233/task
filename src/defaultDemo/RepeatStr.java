@@ -44,6 +44,8 @@ public class RepeatStr {
 		System.out.println(bf);
 		bf.delete(bf.length() - 1, bf.length());// 删除指定行之间的内容
 		System.out.println(bf);
+		bf.reverse();//翻转字符串
+		System.out.println(bf);
 //		System.out.println(str);
 //		System.out.println(str2);
 //		System.out.println(str3 + " " + str4);

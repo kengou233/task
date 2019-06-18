@@ -19,7 +19,7 @@ public class RepeatArr {
 		printArr(a);
 		Arrays.sort(a);// 数组升序排序
 		printArr(a);
-		int index = Arrays.binarySearch(a, 5);// 数组二分查找 返回要查找元素的索引值
+		int index = Arrays.binarySearch(a, 5);// 使用前先排序 数组二分查找 返回要查找元素的数值
 		int index2 = Arrays.binarySearch(a, 0, 3, 5);
 		System.out.println(index);
 		System.out.println(index2);

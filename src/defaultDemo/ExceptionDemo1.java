@@ -15,7 +15,9 @@ public class ExceptionDemo1 {
 			stu.speak(1001);
 		} catch (Myexception e) {
 			// TODO 自动生成的 catch 块
-			e.printStackTrace();
+			System.out.println(e.getMessage());//打印错误消息
+			System.out.println(e.toString());//打印错误消息和包类
+			e.printStackTrace();//打印错误消息 包类和位置
 		}
 	}
 }

@@ -16,7 +16,7 @@ public class ExceptionDemo3 {
 			System.out.println("这两个数的最小公倍数为："+m*n/result);
 		} catch (Exception e) {
 			// TODO 自动生成的 catch 块
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}
 	}
 }
@@ -29,9 +29,9 @@ public class ExceptionDemo3 {
  * 	      后一次的 除数是前一次的余数
  */
 class Computer{
-	public static int divisor(int n,int m)throws Exception {
+	public static int divisor(int n,int m)throws NumlessOneException {
 		if(n<=0||m<=0)
-			throw new Exception("数值不能为0或负数 请重新输入！");
+			throw new NumlessOneException("数值不能为0或负数 请重新输入！");
 		//判断 前一个数是否大于后一个数
 		if(n<m) {
 			int temp=n;
@@ -48,4 +48,11 @@ class Computer{
 		return m;	
 	}
 }
+class NumlessOneException extends RuntimeException{
 
+	public NumlessOneException(String message) {
+		super(message);
+		// TODO 自动生成的构造函数存根
+	}
+	
+}

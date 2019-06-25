@@ -10,25 +10,36 @@ import java.io.ObjectInputStream.GetField;
  */
 public class ExceptionDemo1 {
 	public static void main(String[] args) {
-		Student1 stu = new Student1();
+//		Student1 stu = new Student1();
+//		try {
+//			stu.speak(1001);
+//		} catch (Myexception e) {
+//			// TODO 自动生成的 catch 块
+//			System.out.println(e.getMessage());//打印错误消息
+//			System.out.println(e.toString());//打印错误消息和包类
+//			e.printStackTrace();//打印错误消息 包类和位置
+//		}
 		try {
-			stu.speak(1001);
-		} catch (Myexception e) {
+			sum(5,0);
+		} catch (Exception e) {
 			// TODO 自动生成的 catch 块
-			System.out.println(e.getMessage());//打印错误消息
-			System.out.println(e.toString());//打印错误消息和包类
-			e.printStackTrace();//打印错误消息 包类和位置
+			e.printStackTrace();
 		}
 	}
-}
-class Student1 {
-	public void speak(int n) throws Myexception {
-		// TODO 自动生成的方法存根
-		if (n > 1000)
-			throw new Myexception("数值过大！");
-
+	public static int sum(int a,int b)throws Exception {
+		if(b==0)
+		throw new Exception("除数不能为零");
+		return a/b; 
 	}
 }
+//class Student1 {
+//	public void speak(int n) throws Myexception {
+//		// TODO 自动生成的方法存根
+//		if (n > 1000)
+//			throw new Myexception("数值过大！");
+//
+//	}
+//}
 
 class Myexception extends Exception {
 	private String message;

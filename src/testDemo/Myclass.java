@@ -1,4 +1,4 @@
-package TestDemo1;
+package testDemo;
 
 /**
  * ´ÖÂÔÊ¹ÓÃ¾²Ì¬ÐÞÊÎ·û

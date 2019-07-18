@@ -1,4 +1,4 @@
-package TestDemo1;
+package testDemo;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @author 创建人：灰凉
  * @date 创建时间：2019年6月18日下午1:02:29
  */
-public class Test {
+public class ObjcetTest {
 	public static void main(String[] args) {
 		Employe staff[] = { 
 				new SalariedEmployee("雷伊", 7, 30000),

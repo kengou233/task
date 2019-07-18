@@ -1,4 +1,4 @@
-package TestDemo1;
+package testDemo;
 
 /**
  * 使用抽象类 

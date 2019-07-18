@@ -1,7 +1,5 @@
 package defaultDemo;
 
-import java.io.ObjectInputStream.GetField;
-
 /**
  * 编写两个类 Myexception 和 Student1 后者含有异常方法speak(int n) 要求n的值大于1000时
  * 抛出一个MyException对象 在主方法中实例化Student 并调用speak方法 *

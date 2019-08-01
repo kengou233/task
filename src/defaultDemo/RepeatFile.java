@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 
 /**
@@ -14,9 +16,10 @@ import java.io.IOException;
  */
 public class RepeatFile {
 	public static void main(String[] args) {
-		creatORdelete();//创建和删除
-		fileTest();//查看该文件的属性
-		//StreamTest();
+//		creatORdelete();//创建和删除
+//		fileTest();//查看该文件的属性
+//		StreamTest();
+		WR();
 	}
 
 	public static void creatORdelete() {
@@ -79,6 +82,68 @@ public class RepeatFile {
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
-		
 	}
+		public static void WR() {
+			//写入
+			FileWriter fw = null;
+			try {
+				fw = new FileWriter("temp.txt");
+				fw.write("你好呀 嘿嘿");
+			} catch (IOException e) {
+				// TODO 自动生成的 catch 块
+				e.printStackTrace();
+			}
+			finally {
+				if(fw!=null)
+				{
+					try {
+						fw.close();
+					} catch (IOException e) {
+						// TODO 自动生成的 catch 块
+						e.printStackTrace();
+					}
+				}
+
+			}
+			//读取
+			FileReader fr= null;
+			try {
+				fr = new FileReader("temp.txt");
+				try {
+					/*
+					 * 读取方式一
+					int len =0;
+					while((len=fr.read())!=-1)
+					{
+						System.out.print((char)len);
+					}
+					*/
+					//读取方式二
+					int len=0;
+					char a [] =new char[1024];
+					while((len=fr.read(a))!=-1)
+					{
+						System.out.println(len+" "+new String(a,0,len));
+					}
+				} catch (IOException e) {
+					// TODO 自动生成的 catch 块
+					e.printStackTrace();
+				}
+			} catch (FileNotFoundException e) {
+				// TODO 自动生成的 catch 块
+				e.printStackTrace();
+			}
+			finally {
+				if(fr!=null)
+				{
+					try {
+						fr.close();
+					} catch (IOException e) {
+						// TODO 自动生成的 catch 块
+						e.printStackTrace();
+					}
+				}
+			
+			}
+		}
 }

@@ -1,4 +1,4 @@
-package theardDemo;
+package threadDemo;
 
 /**
  * 单力设计模式使用线程的漏洞

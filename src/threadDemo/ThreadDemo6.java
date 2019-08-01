@@ -1,4 +1,4 @@
-package theardDemo;
+package threadDemo;
 
 /**
  * Ğ´Ò»¸öËÀËø

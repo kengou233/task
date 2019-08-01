@@ -1,4 +1,4 @@
-package theardDemo;
+package threadDemo;
 
 /**
  * 实现多线程

@@ -1,4 +1,4 @@
-package theardDemo;
+package threadDemo;
 
 import java.util.concurrent.locks.*;
 

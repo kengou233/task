@@ -1,4 +1,4 @@
-package theardDemo;
+package threadDemo;
 
 /**
  * 使用线程每100毫秒打印一句话

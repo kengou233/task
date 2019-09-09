@@ -1,4 +1,4 @@
-package testDemo;
+package fileWRDemo;
 
 import java.io.FileReader;
 import java.io.FileWriter;

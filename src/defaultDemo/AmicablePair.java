@@ -16,8 +16,6 @@ public class AmicablePair {
 	}
 	/**
 	 * 将该数字除本身以外所有因数相加
-	 * 
-	 * @return
 	 */
 	public static int factor(int i) {
 		int sum = 0;
